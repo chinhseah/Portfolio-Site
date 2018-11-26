@@ -6,8 +6,7 @@ body, html {
 }
 
 body {
-  font-family: Roboto;
-  font-size: 12px;
+  font: 12px Roboto;
   color: #424242;
 }
 
@@ -16,12 +15,11 @@ h1, h2, h3, h4, h5 {
 }
 
 hr {
-width: auto;
-margin-left: auto;
-margin-right: auto;
-height: 5px;
-background-color:#7d97ad;
-opcaity: 0.5;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5px;
+  background-color:#7d97ad;
 }
 
 header, section {
@@ -56,46 +54,47 @@ ul {
 }
 
 .header__title {
-  flex-grow: 3s;
-  display: inline-block;
-  text-align: left;
+  flex-grow: 3;
+  text-align: right;
 }
 
 /*
 * Details section
 */
 .details_img {
-  max-height: 100%;
-  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
 }
 
 /*
 * Featured Work section
 */
-.work {
-  flex-grow: 1;
-  padding: 1em;
+.work_featured_list {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: stretch;
+  height: 100%;
+  justify-content: center;
 }
 
 .work_featured_title {
   color: #7d97ad;
-  font-size: 2em;
-  font-family: Arial, Helvetica, sans-serif;
+  font: 2em Arial, Helvetica, sans-serif;
 }
 
 .work_featured_item {
-  display: inline-block;
   width: 30%;
   text-align: center;
+}
+
+.work_featured_name {
+  font: 1.5em Arial, Helvetica, sans-serif;
 }
 
 .work_featured_img {
   max-height: 100%;
   max-width: 100%;
   padding: 5% 5% 5% 5%;
-}
-
-.work_featured_name {
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
 }

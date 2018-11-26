@@ -5,8 +5,8 @@
 
 @media screen and (max-width: 700px) {
   /** list featured work vertically*/
-  .work_featured_item {
-    display: block;
+  .work_featured_list {
+      flex-flow: column wrap;
   }
 }
 
